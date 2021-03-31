@@ -2,4 +2,6 @@
 
 pip3 install locust
 
-locust -f locust_files/my_locust_file.py --headless -u 1000 -r 100
+command to run script:
+
+locust -f scale_test_locust.py -H "https://ficcibike.com/" --headless -u 50 -r 10
