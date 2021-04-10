@@ -63,54 +63,57 @@ class WebsiteTasks(HttpUser):
         self.client.get("maritime/assets/images/user_right.png")
         self.client.get("maritime/assets/images/searchh.png")
 
-        #Fail
-        self.client.get("maritime/assets/font/roboto/Roboto-Bold.woff2")
-        self.client.get("maritime/assets/font/roboto/Roboto-Light.woff2")
+        # #Fail
+        # self.client.get("maritime/assets/font/roboto/Roboto-Bold.woff2")
+        # self.client.get("maritime/assets/font/roboto/Roboto-Light.woff2")
+        #
+        # self.client.get("maritime/assets/images/reception-to-auditorium.mp4")
+        # self.client.get("maritime/assets/images/reception-to-exhibition.mp4")
+        # self.client.get("maritime/assets/images/reception-to-b2b.mp4")
+        # self.client.get("maritime/assets/images/networklounge.mp4")
+        #
+        # #Fail
+        # self.client.get("maritime/assets/font/roboto/Roboto-Bold.woff")
+        # self.client.get("maritime/assets/font/roboto/Roboto-Light.woff")
+        # self.client.get("maritime/assets/font/roboto/Roboto-Bold.ttf")
+        # self.client.get("maritime/assets/font/roboto/Roboto-Light.ttf")
+        #
+        # self.client.get("maritime/assets/css/bootstrap.min.css")
+        #
+        #
+        #
+        # #pavilion
+        # self.client.get("maritime/pavilion.php")
+        # self.client.get("maritime/assets/images/pavilion-icon.jpg")
+        #
+        #
+        # #Exhibition
+        # self.client.get("maritime/hall1.php?id=MQ==")
+        # self.client.get("maritime/assets/images/loadingimage.gif")
+        # self.client.get("maritime/assets/css/style.css?v=1617183050")
+        # self.client.get("maritime/assets/images/beep.gif")
+        # self.client.get("maritime/assets/images/hall/HallOptions_Gr1.jpg?v=1617183050")
+        #
+        # # Auditorium
+        # self.client.get("maritime/audi-lobby.php")
+        # self.client.get("maritime/assets/css/mdb.min.css")
+        # self.client.get("maritime/assets/css/validationEngine.jquery.css")
+        # self.client.get("maritime/assets/css/jquery.fancybox.min.css")
+        # self.client.get("maritime/assets/css/style.css?v=1617186156")
+        # self.client.get("maritime/assets/images/Audi-lobby.jpg?v=1617186156")
 
-        self.client.get("maritime/assets/images/reception-to-auditorium.mp4")
-        self.client.get("maritime/assets/images/reception-to-exhibition.mp4")
-        self.client.get("maritime/assets/images/reception-to-b2b.mp4")
-        self.client.get("maritime/assets/images/networklounge.mp4")
+        self.client.get("maritime/auditorium5.php")
 
-        #Fail
-        self.client.get("maritime/assets/font/roboto/Roboto-Bold.woff")
-        self.client.get("maritime/assets/font/roboto/Roboto-Light.woff")
-        self.client.get("maritime/assets/font/roboto/Roboto-Bold.ttf")
-        self.client.get("maritime/assets/font/roboto/Roboto-Light.ttf")
-
-        self.client.get("maritime/assets/css/bootstrap.min.css")
-
-
-
-        #pavilion
-        self.client.get("maritime/pavilion.php")
-        self.client.get("maritime/assets/images/pavilion-icon.jpg")
-
-
-        #Exhibition
-        self.client.get("maritime/hall1.php?id=MQ==")
-        self.client.get("maritime/assets/images/loadingimage.gif")
-        self.client.get("maritime/assets/css/style.css?v=1617183050")
-        self.client.get("maritime/assets/images/beep.gif")
-        self.client.get("maritime/assets/images/hall/HallOptions_Gr1.jpg?v=1617183050")
-
-        # Auditorium
-        self.client.get("maritime/audi-lobby.php")
-        self.client.get("maritime/assets/css/mdb.min.css")
-        self.client.get("maritime/assets/css/validationEngine.jquery.css")
-        self.client.get("maritime/assets/css/jquery.fancybox.min.css")
-        self.client.get("maritime/assets/css/style.css?v=1617186156")
-        self.client.get("maritime/assets/images/Audi-lobby.jpg?v=1617186156")
-
-        #networkinglounge
-        self.client.get("maritime/networkinglounge.php")
-        self.client.get("maritime/assets/css/slick-theme.css")
-        self.client.get("maritime/assets/css/style.css?v=1617192199")
-        self.client.get("maritime/assets/images/b2b/background.jpg")
-        self.client.get("maritime/assets/js/slick.min.js")
-
-        #srchd
-        self.client.get("maritime/srchd.php")
+        #
+        # #networkinglounge
+        # self.client.get("maritime/networkinglounge.php")
+        # self.client.get("maritime/assets/css/slick-theme.css")
+        # self.client.get("maritime/assets/css/style.css?v=1617192199")
+        # self.client.get("maritime/assets/images/b2b/background.jpg")
+        # self.client.get("maritime/assets/js/slick.min.js")
+        #
+        # #srchd
+        # self.client.get("maritime/srchd.php")
 
 
 # class WebsiteUser(HttpLocust):
