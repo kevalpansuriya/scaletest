@@ -5,7 +5,7 @@ from locust import User, TaskSet, HttpUser, between, task
 class WebsiteTasks(HttpUser):
 
     url = "https://ficcibike.com/maritime/"
-    wait_time = between(1, 2)
+    wait_time = between(5, 15)
 
     def on_start(self):
 
