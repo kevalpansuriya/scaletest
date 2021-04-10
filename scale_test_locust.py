@@ -1,3 +1,5 @@
+import time
+
 from locust import User, TaskSet, HttpUser, between, task
 
 
@@ -9,7 +11,13 @@ class WebsiteTasks(HttpUser):
 
     def on_start(self):
         self.host = "https://ficcibike.com/"
-        self.client.get("maritime/")
+        #self.client.get("maritime/")
+
+    def test_in_loop(self):
+        while True:
+            self.client.get("maritime/auditorium5.php")
+            time.sleep(1)
+
 
     @task
     def login(self):
@@ -114,6 +122,7 @@ class WebsiteTasks(HttpUser):
         #
         # #srchd
         # self.client.get("maritime/srchd.php")
+
 
 
 # class WebsiteUser(HttpLocust):
