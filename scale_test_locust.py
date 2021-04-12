@@ -88,6 +88,11 @@ class WebsiteTasks(HttpUser):
         self.client.get("maritime/assets/css/style.css?v=1617186156")
         self.client.get("maritime/assets/images/Audi-lobby.jpg?v=1617186156")
 
+        while True:
+            print("in infinite loop")
+            time.sleep(10)
+
+
 
 
 
