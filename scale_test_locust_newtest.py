@@ -15,7 +15,8 @@ class WebsiteTasks(HttpUser):
 
 
         self.client.get("allybooklaunch/index.php")
-        self.client.post("allybooklaunch/data/loginData.phppasswd=&emailid=vandana.a.gupta%40accenture.com&g-recaptcha-response=03AGdBq25YnNighzXxxByLrkgkFCLng6Ex03mnmBEOgp8q_0RhkT8pB3yeSWzYPPKKnxZbSElcBu-QkjYLQH4p6jmg1pKcQ8nkdXFq9nU-9nprkEE2d2JVYfFtZ1zEc_5O0PRnkO7sUsTi3bbhx1yaP6a39bhsznxeDTfNFsTudfCOmpoQ6XUVhs23mn-OPGlqn69kLGql7ge6nqBseqhMrH3lnivn-0qdLXNVV7pe8-uxlcYNXTvjZcxDNGykvBz72cVrhNasNSkwBW82Uz9Ot0WE7iKOQq-wRP25nLMx892uSKc39buITQlCXYkeqb9NJV0SWV9S0LwkF5QjErS4Fia0nuKRjBLgP4Pn2VqolXMrdDcBKSLoHpNcMGRSqeMyzhvD2XebVWqgdXC3_2SjRHIv4k1DA497jIRB34k9vjjX3Yqv2ufOPhaW7k3IwC9ng11NcaNgnV7Hhxk7pGszJK2Hi2xZvgE_7A&action=validate_captcha")
+        payload = "passwd=&emailid=vandana.a.gupta%40accenture.com&g-recaptcha-response=03AGdBq25YnNighzXxxByLrkgkFCLng6Ex03mnmBEOgp8q_0RhkT8pB3yeSWzYPPKKnxZbSElcBu-QkjYLQH4p6jmg1pKcQ8nkdXFq9nU-9nprkEE2d2JVYfFtZ1zEc_5O0PRnkO7sUsTi3bbhx1yaP6a39bhsznxeDTfNFsTudfCOmpoQ6XUVhs23mn-OPGlqn69kLGql7ge6nqBseqhMrH3lnivn-0qdLXNVV7pe8-uxlcYNXTvjZcxDNGykvBz72cVrhNasNSkwBW82Uz9Ot0WE7iKOQq-wRP25nLMx892uSKc39buITQlCXYkeqb9NJV0SWV9S0LwkF5QjErS4Fia0nuKRjBLgP4Pn2VqolXMrdDcBKSLoHpNcMGRSqeMyzhvD2XebVWqgdXC3_2SjRHIv4k1DA497jIRB34k9vjjX3Yqv2ufOPhaW7k3IwC9ng11NcaNgnV7Hhxk7pGszJK2Hi2xZvgE_7A&action=validate_captcha"
+        self.client.post("allybooklaunch/data/loginData.php",data=payload)
         self.client.get("allybooklaunch/lobby.php")
         self.client.get("allybooklaunch/auditorium.php")
 
